@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	
+	<flow name="transportmoduleprojectFlow" doc:id="649f5443-c94e-4418-b9bf-792fadf8d331" >
+		<http:listener doc:name="/getRoutes" doc:id="04eb51f2-ada2-405b-8854-2ca5ee188a5f" config-ref="HTTP_Listener_config" path="${http.listner.path}"/>
+		<logger level="INFO" doc:name="Logger" doc:id="c9b2a77a-8eb6-4eca-988a-3c7035468087" />
+	</flow>
+</mule>
